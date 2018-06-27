@@ -12,9 +12,15 @@
 		DC194B3D20E3FB9C00AFE5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC194B3B20E3FB9C00AFE5D2 /* Main.storyboard */; };
 		DC194B3F20E3FBA100AFE5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC194B3E20E3FBA100AFE5D2 /* Assets.xcassets */; };
 		DC194B4220E3FBA100AFE5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC194B4020E3FBA100AFE5D2 /* LaunchScreen.storyboard */; };
+		DC194B4F20E3FF0000AFE5D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC194B4E20E3FF0000AFE5D2 /* GoogleService-Info.plist */; };
+		DC194B5320E4033D00AFE5D2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC194B5220E4033D00AFE5D2 /* LoginVC.swift */; };
+		E8728D91D54F2193AB888C60 /* Pods_PlayGround00.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB894D248B7CD1E57985675 /* Pods_PlayGround00.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FB894D248B7CD1E57985675 /* Pods_PlayGround00.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayGround00.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B64DD0B73878CC8BF737100 /* Pods-PlayGround00.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGround00.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGround00/Pods-PlayGround00.release.xcconfig"; sourceTree = "<group>"; };
+		7D223AFB56CD03E6424203A6 /* Pods-PlayGround00.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGround00.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGround00/Pods-PlayGround00.debug.xcconfig"; sourceTree = "<group>"; };
 		DC194B3420E3FB9C00AFE5D2 /* PlayGround00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGround00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC194B3720E3FB9C00AFE5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC194B3920E3FB9C00AFE5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		DC194B3E20E3FBA100AFE5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC194B4120E3FBA100AFE5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC194B4320E3FBA100AFE5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC194B4E20E3FF0000AFE5D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC194B5220E4033D00AFE5D2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8728D91D54F2193AB888C60 /* Pods_PlayGround00.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFFC84DA20FA3761D70103C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D223AFB56CD03E6424203A6 /* Pods-PlayGround00.debug.xcconfig */,
+				7B64DD0B73878CC8BF737100 /* Pods-PlayGround00.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC194B2B20E3FB9C00AFE5D2 = {
 			isa = PBXGroup;
 			children = (
 				DC194B3620E3FB9C00AFE5D2 /* PlayGround00 */,
 				DC194B3520E3FB9C00AFE5D2 /* Products */,
+				AFFC84DA20FA3761D70103C5 /* Pods */,
+				EFB1CFB3DBE63A73E915BD30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,64 @@
 		DC194B3620E3FB9C00AFE5D2 /* PlayGround00 */ = {
 			isa = PBXGroup;
 			children = (
-				DC194B3720E3FB9C00AFE5D2 /* AppDelegate.swift */,
-				DC194B3920E3FB9C00AFE5D2 /* ViewController.swift */,
 				DC194B3B20E3FB9C00AFE5D2 /* Main.storyboard */,
+				DC194B4D20E3FE6800AFE5D2 /* Services */,
+				DC194B4C20E3FE5B00AFE5D2 /* Utilities */,
+				DC194B4A20E3FE4300AFE5D2 /* Model */,
+				DC194B4B20E3FE4C00AFE5D2 /* View */,
+				DC194B4920E3FE3800AFE5D2 /* Controller */,
+				DC194B3720E3FB9C00AFE5D2 /* AppDelegate.swift */,
 				DC194B3E20E3FBA100AFE5D2 /* Assets.xcassets */,
 				DC194B4020E3FBA100AFE5D2 /* LaunchScreen.storyboard */,
 				DC194B4320E3FBA100AFE5D2 /* Info.plist */,
+				DC194B4E20E3FF0000AFE5D2 /* GoogleService-Info.plist */,
 			);
 			path = PlayGround00;
+			sourceTree = "<group>";
+		};
+		DC194B4920E3FE3800AFE5D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC194B3920E3FB9C00AFE5D2 /* ViewController.swift */,
+				DC194B5220E4033D00AFE5D2 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC194B4A20E3FE4300AFE5D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC194B4B20E3FE4C00AFE5D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC194B4C20E3FE5B00AFE5D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC194B4D20E3FE6800AFE5D2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EFB1CFB3DBE63A73E915BD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB894D248B7CD1E57985675 /* Pods_PlayGround00.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC194B4620E3FBA100AFE5D2 /* Build configuration list for PBXNativeTarget "PlayGround00" */;
 			buildPhases = (
+				77F9CBECA37BACD7477A9098 /* [CP] Check Pods Manifest.lock */,
 				DC194B3020E3FB9C00AFE5D2 /* Sources */,
 				DC194B3120E3FB9C00AFE5D2 /* Frameworks */,
 				DC194B3220E3FB9C00AFE5D2 /* Resources */,
+				681F9D3C677CBE6186067B9E /* [CP] Embed Pods Frameworks */,
+				0335F5C7273561D23FFEFB77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +196,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC194B4220E3FBA100AFE5D2 /* LaunchScreen.storyboard in Resources */,
+				DC194B4F20E3FF0000AFE5D2 /* GoogleService-Info.plist in Resources */,
 				DC194B3F20E3FBA100AFE5D2 /* Assets.xcassets in Resources */,
 				DC194B3D20E3FB9C00AFE5D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0335F5C7273561D23FFEFB77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayGround00/Pods-PlayGround00-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681F9D3C677CBE6186067B9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlayGround00/Pods-PlayGround00-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayGround00/Pods-PlayGround00-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F9CBECA37BACD7477A9098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayGround00-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC194B3020E3FB9C00AFE5D2 /* Sources */ = {
@@ -137,6 +269,7 @@
 			files = (
 				DC194B3A20E3FB9C00AFE5D2 /* ViewController.swift in Sources */,
 				DC194B3820E3FB9C00AFE5D2 /* AppDelegate.swift in Sources */,
+				DC194B5320E4033D00AFE5D2 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +411,7 @@
 		};
 		DC194B4720E3FBA100AFE5D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D223AFB56CD03E6424203A6 /* Pods-PlayGround00.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +430,7 @@
 		};
 		DC194B4820E3FBA100AFE5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B64DD0B73878CC8BF737100 /* Pods-PlayGround00.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
