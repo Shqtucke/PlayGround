@@ -20,10 +20,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="LDI-Jv-UpS"/>
+                    <connections>
+                        <segue destination="Plk-tf-MWr" kind="presentation" identifier="LoginVC" id="L7c-Ie-fm4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="134"/>
+            <point key="canvasLocation" x="874" y="553"/>
         </scene>
         <!--Item-->
         <scene sceneID="Noe-If-uhq">
@@ -39,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9t-7c-ugg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="133"/>
+            <point key="canvasLocation" x="1494" y="-27"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="PvG-qq-TQz">
