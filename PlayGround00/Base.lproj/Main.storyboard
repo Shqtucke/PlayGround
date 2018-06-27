@@ -52,36 +52,92 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LVbackground" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-Bb-Uf5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ew-E5-uZO">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ew-E5-uZO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7L-ni-BcZ">
-                                        <rect key="frame" x="47" y="233" width="280" height="39"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7L-ni-BcZ" customClass="RoundTextField" customModule="PlayGround00" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="233" width="282" height="39"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="A2n-FC-xzk"/>
+                                            <constraint firstAttribute="height" constant="39" id="A2n-FC-xzk"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZH-cM-sO4">
-                                        <rect key="frame" x="47" y="150" width="280" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBD-Gi-L4W" customClass="RoundButton" customModule="PlayGround00" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="295" width="225" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="N6i-1n-Isz"/>
+                                            <constraint firstAttribute="height" constant="42" id="mCp-sq-YQS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Sign-In">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZH-cM-sO4" customClass="RoundTextField" customModule="PlayGround00" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="169" width="280" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="jph-uf-4bN"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.60392156860000001" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XZH-cM-sO4" firstAttribute="leading" secondItem="3ew-E5-uZO" secondAttribute="leading" constant="47" id="0eQ-Rz-SpX"/>
-                                    <constraint firstItem="B7L-ni-BcZ" firstAttribute="top" secondItem="XZH-cM-sO4" secondAttribute="bottom" constant="41" id="5TQ-dM-axW"/>
-                                    <constraint firstItem="XZH-cM-sO4" firstAttribute="trailing" secondItem="B7L-ni-BcZ" secondAttribute="trailing" id="AaO-Me-xre"/>
+                                    <constraint firstItem="PBD-Gi-L4W" firstAttribute="leading" secondItem="3ew-E5-uZO" secondAttribute="leading" constant="75" id="2zu-BI-57i"/>
+                                    <constraint firstItem="B7L-ni-BcZ" firstAttribute="top" secondItem="XZH-cM-sO4" secondAttribute="bottom" constant="22" id="5TQ-dM-axW"/>
+                                    <constraint firstItem="XZH-cM-sO4" firstAttribute="trailing" secondItem="B7L-ni-BcZ" secondAttribute="trailing" constant="-1" id="AaO-Me-xre"/>
+                                    <constraint firstAttribute="trailing" secondItem="PBD-Gi-L4W" secondAttribute="trailing" constant="75" id="L4a-vd-Qj2"/>
                                     <constraint firstItem="XZH-cM-sO4" firstAttribute="centerX" secondItem="3ew-E5-uZO" secondAttribute="centerX" id="ONl-S5-XGu"/>
-                                    <constraint firstItem="XZH-cM-sO4" firstAttribute="top" secondItem="3ew-E5-uZO" secondAttribute="top" constant="150" id="emm-DE-ElR"/>
+                                    <constraint firstItem="XZH-cM-sO4" firstAttribute="top" secondItem="3ew-E5-uZO" secondAttribute="top" constant="169" id="emm-DE-ElR"/>
                                     <constraint firstItem="XZH-cM-sO4" firstAttribute="leading" secondItem="B7L-ni-BcZ" secondAttribute="leading" id="nMo-KB-lSR"/>
+                                    <constraint firstItem="PBD-Gi-L4W" firstAttribute="top" secondItem="B7L-ni-BcZ" secondAttribute="bottom" constant="23" id="tEM-H8-2wy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -101,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiQ-0U-XEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2205.5999999999999" y="132.68365817091455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="m7s-vG-Ef7">

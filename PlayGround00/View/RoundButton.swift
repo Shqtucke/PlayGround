@@ -1,5 +1,5 @@
 //
-//  RoundTextField.swift
+//  RoundButton.swift
 //  PlayGround00
 //
 //  Created by Shaun Tucker on 6/27/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-@IBDesignable
-class RoundTextField: UITextField {
+@IBDesignable 
+class RoundButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -35,18 +35,5 @@ class RoundTextField: UITextField {
             backgroundColor = bgColor
         }
     }
-    
-    @IBInspectable var placholderColor: UIColor? {
-        didSet {
-            let rawString = attributedPlaceholder?.string != nil ? attributedPlaceholder!.string : ""
-            let str = NSAttributedString(string: rawString, attributes: [kCTForegroundColorAttributeName as NSAttributedString.Key: placholderColor!])
-            attributedPlaceholder = str
-            
-        }
-    }
-    
-    
-    
-    
     
 }

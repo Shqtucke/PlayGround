@@ -15,6 +15,7 @@
 		DC194B4F20E3FF0000AFE5D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC194B4E20E3FF0000AFE5D2 /* GoogleService-Info.plist */; };
 		DC194B5320E4033D00AFE5D2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC194B5220E4033D00AFE5D2 /* LoginVC.swift */; };
 		DC194B5520E4098600AFE5D2 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC194B5420E4098600AFE5D2 /* RoundTextField.swift */; };
+		DC194B5720E40EA600AFE5D2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC194B5620E40EA600AFE5D2 /* RoundButton.swift */; };
 		E8728D91D54F2193AB888C60 /* Pods_PlayGround00.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB894D248B7CD1E57985675 /* Pods_PlayGround00.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		DC194B4E20E3FF0000AFE5D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC194B5220E4033D00AFE5D2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DC194B5420E4098600AFE5D2 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		DC194B5620E40EA600AFE5D2 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				DC194B5420E4098600AFE5D2 /* RoundTextField.swift */,
+				DC194B5620E40EA600AFE5D2 /* RoundButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC194B5520E4098600AFE5D2 /* RoundTextField.swift in Sources */,
+				DC194B5720E40EA600AFE5D2 /* RoundButton.swift in Sources */,
 				DC194B3A20E3FB9C00AFE5D2 /* ViewController.swift in Sources */,
 				DC194B3820E3FB9C00AFE5D2 /* AppDelegate.swift in Sources */,
 				DC194B5320E4033D00AFE5D2 /* LoginVC.swift in Sources */,
